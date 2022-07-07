@@ -16,16 +16,16 @@
     /* Background colors */
     --bg-dark-clr: #2F303A;
     --bg-btn-clr: #F5F4FA;
-    --bg-ph-clr: #FFFFFF;
+    --bg-wh-clr: #FFFFFF;
     --bg-middle-clr: #E5E5E5;
 }
 
-
 body {
     font-family: var(--main-font), sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.67;
-    color: var(--black-txt-clr)
+    letter-spacing: 0.03em;
+    color: var(--black-txt-clr);
 }
 
 /* common styles */
@@ -63,14 +63,14 @@ body {
 /* header section */
 
 .header {
-    background-color: #FFFFFF;
+    background-color: var(--bg-wh-clr);
 }
 
 .logo-link {
+    font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     color: var(--accent-txt-clr);
 }
 
@@ -84,6 +84,10 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--black-txt-clr); 
+}
+
+.header-nav .link.current {
+    color: var(--accent-txt-clr);
 }
 
 .header-link:hover,
@@ -156,7 +160,6 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--black-txt-clr);
 }
@@ -164,7 +167,6 @@ body {
 .adv-list-item-p {
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: var(--grey-txt-clr);
 }
 
@@ -179,7 +181,6 @@ body {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--black-txt-clr);
 }
 
@@ -194,7 +195,6 @@ body {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--black-txt-clr);
 }
 
@@ -210,7 +210,6 @@ body {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--black-txt-clr);
 }
 
@@ -218,7 +217,6 @@ body {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--grey-txt-clr);
 }
 /* page studio end */
@@ -226,7 +224,7 @@ body {
 /* page portfolio start */
 
 
-/* section our portfolio */
+/* section  portfolio */
 .our-portfolio {
     background-color: var(--bg-middle-clr);
 }
@@ -242,7 +240,6 @@ body {
 .portfolio-item-p {
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
     color: var(--grey-txt-clr);
 }
 
@@ -262,7 +259,6 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     color: var(--accent-txt-clr);
 }
 
@@ -273,23 +269,23 @@ body {
 .footer-item-street {
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
-color: var(--white-txt-clr);
+    color: var(--white-txt-clr);
 }
 
 .footer-item-mail {
     font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em; 
+    line-height: 1.71; 
     color: var(--footer-mail-tel-clr);
 }
 
 .footer-item-tel {
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: var(--footer-mail-tel-clr);
 }
+
+/* page portfolio end */
+
 
 /* hidden */
 
@@ -297,6 +293,6 @@ color: var(--white-txt-clr);
     visibility: hidden;
 }
 
-.buttons-h {
+.our-portfolio {
     visibility: hidden;
 }
